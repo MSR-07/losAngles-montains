@@ -1,27 +1,351 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LosAngles Montains</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LosAngles Mountains</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="./Assets/Images/logo.png" sizes="16x16">
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./styles/index.css" />
+    <style>
+        .swiperSlider {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 230px;
+  background-color: #515f73;
+  padding: 20px 0px 36px 0px;
+  opacity: 0.9;
+}
+      .swiper {
+        width: 100%;
+        height: 230px;
+      }
 
-    <section class="" >
-        <div class="container">
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .swiper-pagination {
+        transform: translateY(0px);
+      }
+      .swiper-pagination .swiper-pagination-bullet {
+        width: 12px !important;
+        height: 12px !important;
+      }
+      .swiper-pagination .swiper-pagination-bullet-active {
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar_content">
+          <a class="logo" href="#"><img src="./Assets/Images/logo.png" /></a>
+          <ul class="nav-links">
+            <li><a href="#">01. History</a></li>
+            <li><a href="#">02. Team</a></li>
+          </ul>
         </div>
-    </section>
-    <section class="class">
-        <div class="container">
+      </div>
+    </nav>
+    <!-- banner hero  section  ------------------------------->
 
+    <section class="banner_1">
+      <div class="banner_1_content">
+        <div class="container" style="padding: 40px 0px">
+          <div class="banner_1_heading">
+            <h1>
+              LOSANGELES
+              <p style="color: #414f6b !important; line-height: 55px">
+                MOUNTAINS
+              </p>
+            </h1>
+          </div>
+          <!-- <div class="banner_1_img">
+      <img src="./Assets/Images/LOSANGELES MOUNTAINS copy.png"/>
+  </div> -->
         </div>
+      </div>
     </section>
-    <section class="class" >
+    <!-- sticky nav section ----------------------------------- -->
+    <section class="sticky_nav">
+      <div class="sticky_nav_content">
         <div class="container">
-
+          <div class="sticky_nav-data">
+            <div class="sticky_nav_logo">
+              <a class="logo" href="#"
+                ><img src="./Assets/Images/logo.png"
+              /></a>
+              <div class="sticky_nav_logo_text">
+                <h3>
+                  LOSANGELES
+                  <p style="color: #414f6b !important; line-height: 20px">
+                    MOUNTAINS
+                  </p>
+                </h3>
+              </div>
+            </div>
+            <ul class="sticky_nav_links">
+              <li><a href="#">01. History</a></li>
+              <li><a href="#">02. Team</a></li>
+            </ul>
+          </div>
         </div>
+      </div>
     </section>
+    <!-- banner 2 with swiper------------------------------------- -->
+    <section class="banner_2">
+      <div class="banner_2_containerWrapper">
+        <div class="container">
+          <div class="banner_2_heading">
+            <h2>01.</h2>
+            <h3>HISTORY</h3>
+          </div>
+          <p class="banner_2_content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in
+            ante viverra, rutrum erat rutrum, consectetur mi. Proin at maximus
+            est. Nullam purus ex, iaculis sed erat sed, blandit tincidunt quam.
+            Cras scelerisque id quam sed dignissim Pellentesque urna nunc,
+            gravida quis hendrerit ac, tristique ut quam. Vivamus suscipit
+            dignissim tortor nec congue.
+          </p>
+        </div>
+      </div>
+      <section class="swiperSlider">
+        <div class="swiperSlier_container_wrapper">
+          <!-- Swiper -------------------------------------->
+          <div class="container">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="./Assets//Images/slider1.png"
+                    class="slider_Img_Class"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./Assets//Images/slider2.png"
+                    class="slider_Img_Class"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./Assets//Images/slider1.png"
+                    class="slider_Img_Class"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./Assets//Images/slider2.png"
+                    class="slider_Img_Class"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./Assets//Images/slider1.png"
+                    class="slider_Img_Class"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./Assets//Images/slider2.png"
+                    class="slider_Img_Class"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+       
+        <!-- navbar 3 ---------------------------------------------- -->
+      </section>
+    </section>
+    <section class="navbar_3">
+      <div class="navbar_3_container_wrapper">
+        <div class="container">
+          <div class="navbar_3_content">
+            <div class="banner_2_heading">
+              <h2>02.</h2>
+              <h3>CLIMB</h3>
+            </div>
+            <p>
+              Cras scelerisque id quam sed dignissim Pellentesque urna nunc,
+              gravida quis hendrerit ac, tristique ut quam. Vivamus suscipit
+              dignissim tortor nec congue.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- tabs section -------------------------------------- -->
     
-</body>
+    <section class="tabs_section">
+     
+        <div class="tab">
+            <div class="container">
+          <button class="tablinks active" onclick="openCity(event, 'London')">
+            MOUNTAIN1
+          </button>
+          <button class="tablinks" onclick="openCity(event, 'Paris')">
+            MOUNTAIN2
+          </button>
+        </div>
+        </div>
+
+        <div id="London" class="tabcontent" style="display:  block;">
+            <div class="container">
+<div class="tab1Schedule">
+    <h1>SCHEDULE</h1>
+    <div class="content">
+       <h3 class="price">  28 Nov 2016  </h3>
+       <h3 class="price">Vestibulum viverra</h3>
+       </div>
+       <div class="content">
+        <h3 class="price">  28 Nov 2016   </h3>
+       <h3 class="price">Vestibulum viverra</h3>
+       </div>
+       <br></br>
+       <div class="content">
+        <h3 class="price">  28 Nov 2016   </h3>
+       <h3 class="price">Vestibulum viverra</h3>
+       </div>
+       <br></br>
+       <div class="content">
+        <h3 class="price">  28 Nov 2016   </h3>
+       <h3 class="price">Vestibulum viverra</h3>
+       </div>
+    </div>
+</div>
+</div>
+        </div>
+
+        <div id="Paris" class="tabcontent">
+            <div class="container">
+            <div class="tab1Schedule">
+                <h1>SCHEDULE2</h1>
+                <div class="content">
+                   <h3 class="price">  28 Nov 2016  </h3>
+                   <h3 class="price">Vestibulum viverra</h3>
+                   </div>
+                   <div class="content">
+                    <h3 class="price">  28 Nov 2016   </h3>
+                   <h3 class="price">Vestibulum viverra</h3>
+                   </div>
+                   <br></br>
+                   <div class="content">
+                    <h3 class="price">  28 Nov 2016   </h3>
+                   <h3 class="price">Vestibulum viverra</h3>
+                   </div>
+                   <br></br>
+                   <div class="content">
+                    <h3 class="price">  28 Nov 2016   </h3>
+                   <h3 class="price">Vestibulum viverra</h3>
+                   </div>
+                </div>
+            </div>
+            </div>
+                    </div>
+            
+       
+      </div>
+    </section>
+    <!-- footer section ----------------------------------------------- -->
+    <footer class="footer">
+        <div class="footer_container-wrapper">
+        <div class="container">
+            <div class="footer_content"> 
+            <div class="sticky_nav_logo">
+                <a class="logo" href="#"><img src="./Assets/Images/logo.png" /></a>
+                <div class="sticky_nav_logo_text footerStickyNavLogo">
+                  <h3>
+                    LOSANGELES
+                    <p style=" line-height: 20px">
+                      MOUNTAINS
+                    </p>
+                  </h3>
+                </div>
+            </div>
+            <p>COPYRIGHT 2016. ALL RIGHTS RESERVED</p>
+              </div>
+        </div>
+    </div>
+    </footer>
+     <!-- Swiper JS -->
+     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+     <!-- Initialize Swiper -->
+     <script>
+       var swiper = new Swiper(".mySwiper", {
+         slidesPerView: 1,
+         spaceBetween: 15,
+         pagination: {
+           el: ".swiper-pagination",
+           clickable: true,
+         },
+         breakpoints: {
+           // When window width is less than 768px
+           768: {
+             slidesPerView: 2,
+             spaceBetween: 10,
+           },
+           // When window width is between 768px and 1024px
+           1024: {
+             slidesPerView: 3,
+             spaceBetween: 15,
+           },
+           // When window width is greater than or equal to 1280px (2xl)
+           1280: {
+             slidesPerView: 4,
+             spaceBetween: 15,
+           },
+         },
+       });
+     </script>
+    <script>
+      // Add this code to set the first tab as active by default
+      document.getElementById("London").style.display = "block";
+      document.querySelector(".tablinks.active").click();
+
+      function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+    </script>
+  </body>
 </html>

@@ -2,30 +2,426 @@
   padding: 0;
   margin: 0;
 }
-/* Simple CSS for a responsive container */
+@font-face {
+  font-family: "Lato";
+  src: url("../Assets/Fontfamily/Lato-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Oswald";
+  src: url("../Assets/Fontfamily/Oswald-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bebas";
+  src: url("../Assets/Fontfamily/Bebas-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* body {
+  font-family: "Lato", sans-serif;
+} */
 .container {
-  max-width: 100%;
-  margin-left: auto;
+  width: 100%;
   margin-right: auto;
-  padding: 1rem;
-  box-sizing: border-box;
+  margin-left: auto;
+}
+.navbar,
+.sticky_nav_content,
+.banner_2_containerWrapper,
+.swiperSlier_container_wrapper,
+.navbar_3_container_wrapper,
+.footer_container-wrapper {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+.navbar_content {
+  padding: 8px 0px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  /* color: #fff; */
+  /* font-size: 24px; */
+  text-decoration: none;
+}
+
+.logo img,
+.sticky_nav_logo .logo img {
+  width: 40px; /* Adjust the width as needed */
+  height: auto;
+}
+
+/* Style for the navigation links */
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links a {
+  font-size: 12px;
+  letter-spacing: 1px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #fefeff;
+  font-weight: 900;
+  font-style: italic;
+  font-family: "Lato";
+
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+/* hero section --------------------------------------------------- */
+.banner_12 {
+  width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+.banner_1 {
+  width: 100%;
+  min-height: 100vh;
+  height: max-content;
+  background-image: url("../Assets/Images/Background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left top;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: -60px;
+  /* padding:40px 0px; */
+}
+.banner_1_img {
+  width: 280px;
+}
+.banner_1_img img {
+  width: 100%;
+  object-fit: conver;
+}
+.banner_1_heading {
+  display: flex;
+}
+.banner_1_heading h1 {
+  font-size: 40px;
+  letter-spacing: 1px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #4d4d4d;
+  font-family: "Bebas";
+  margin: auto;
+  text-align: center;
+}
+/* sticky_nav section ----------------------------------------- */
+
+.sticky_nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: white;
+  padding: 16px 0px;
+}
+.sticky_nav-data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.sticky_nav_logo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.sticky_nav_logo_text h3 {
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #4d4d4d;
+  font-family: "Bebas";
+}
+.sticky_nav_links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  list-style-type: none;
+}
+.sticky_nav_links li a {
+  font-size: 12px;
+  letter-spacing: 1px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #414f6b;
+  font-weight: 900;
+  font-style: italic;
+  font-family: "Lato";
+  list-style-type: none;
+  text-decoration-color: #414f6b;
+}
+/* banner_2 section ----------------------------------------- */
+
+.banner_2 {
+  position: relative;
+  width: 100%;
+  min-height: 780px;
+  background-image: url("../Assets/Images/banner2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.banner_2_containerWrapper .banner_2_heading {
+  padding-top: 32px;
+}
+.banner_2_heading {
+  /* padding-top: 60px; */
+  display: flex;
+  gap: 2xp;
+  align-items: center;
+}
+.banner_2_heading h2 {
+  opacity: 0.502;
+  font-size: 70px;
+  color: #414f6b;
+  font-weight: 700;
+  font-family: "Oswald";
+}
+.banner_2_heading h3 {
+  font-size: 20px;
+  color: #414f6b;
+  font-weight: 700;
+  font-family: "Oswald";
+}
+.banner_2_content {
+  max-width: 814px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: 300;
+  font-family: "Lato";
+}
+/* navbar_3 section ----------------------------------------- */
+.navbar_3 {
+  width: 100%;
+}
+.navbar_3_content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 16px 0px;
+}
+.navbar_3_content p {
+  max-width: 611px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: 300;
+  font-family: "Lato";
+}
+
+/* tabs section ----------------------------------------- */
+
+.tab {
+  overflow: hidden;
+  padding: 0px 20px;
+  background-color: #404e6c;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  font-size: 20px;
+  color: #b0b4be;
+  background-color: #404e6c;
+  font-weight: 700;
+  font-family: "Oswald";
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #404e6c;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  position: relative;
+}
+.tab button.active::before {
+  position: absolute;
+  width: 100%;
+  background-color: #b0b4be;
+  height: 1px;
+  content: "";
+  left: 0;
+  bottom: 6px;
+}
+/* Style the tab content */
+#London {
+  display: none;
+  padding: 6px 12px;
+
+  border-top: none;
+  min-height: 660px;
+  background-image: url("../Assets//Images//banner3.png");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left top;
+}
+#Paris {
+  display: none;
+  padding: 6px 12px;
+
+  border-top: none;
+  min-height: 660px;
+  background-image: url("../Assets//Images/tab2.png");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left top;
+}
+.tab1Schedule {
+  padding: 20px;
+  background-color: #eceef1;
+  margin-top: 100px;
+  margin-left: 50px;
+  width: max-content;
+}
+.tab1Schedule h1 {
+  font-size: 32px;
+  color: #414f6b;
+  font-weight: 700;
+  font-family: "Oswald";
+  margin-bottom: 4px;
+}
+.tab1Schedule .content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+.tab1Schedule .content .price {
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: 300;
+  font-family: "Lato";
+}
+
+/* footer section ----------------------------------------- */
+.footer {
+  width: 100%;
+  padding: 20px 0px;
+  background-color: #404e6c;
+}
+.footer_content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: space-between;
+  align-items: center;
+}
+.footerStickyNavLogo h3,
+.footerStickyNavLogo h3 > p {
+  color: #576a90 !important ;
+}
+.footer_content p {
+  color: #576a90;
 }
 
 /* Media query for responsive adjustments */
+
+/* Responsive breakpoints */
 @media (min-width: 640px) {
   .container {
-    max-width: 100%;
+    max-width: 640px;
   }
 }
 
 @media (min-width: 768px) {
   .container {
-    max-width: 100%;
+    max-width: 768px;
+  }
+  .banner_1_heading h1 {
+    font-size: 60px;
+    line-height: 50px;
+    text-align: center;
+  }
+  .sticky_nav_logo_text h3 {
+    font-size: 21px;
+    letter-spacing: 0px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: #4d4d4d;
+    font-family: "Bebas";
+  }
+
+  .banner_2_heading h2 {
+    font-size: 90px;
+  }
+  .banner_2_heading h3 {
+    font-size: 24px;
+  }
+  .navbar_3_content {
+    gap: 20px;
+    /* padding: 16px 0px; */
+  }
+  .footer_content {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
 @media (min-width: 1024px) {
   .container {
-    max-width: 1024px; /* Adjust the maximum width for larger screens */
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+@media (min-width: 1536px) {
+  .banner_1 {
+    min-height: 1080px;
+    height: max-content;
+  }
+  .banner_1_heading h1 {
+    font-size: 115px;
+    letter-spacing: 1px;
+    line-height: 124px;
+    text-transform: uppercase;
+    color: #4d4d4d;
+    font-family: "Bebas";
+    margin: auto;
+  }
+
+  .banner_2_heading h2 {
+    font-size: 136px;
+  }
+  .banner_2_heading h3 {
+    font-size: 32px;
   }
 }
